@@ -37,7 +37,14 @@ service:
         protocol: UDP
         port: 53
         targetPort: 53
-
+  dhcp:
+    enabled: true
+    ports:
+      dns:
+        enabled: true
+        protocol: UDP
+        port: 67
+        targetPort: 67
 pihole:
   WEBPASSWORD: "somepassword"
   DNS1: "9.9.9.9"
