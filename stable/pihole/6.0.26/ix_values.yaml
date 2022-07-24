@@ -40,7 +40,7 @@ service:
   dhcp:
     enabled: true
     ports:
-      dns:
+      dhcp:
         enabled: true
         protocol: UDP
         port: 67
